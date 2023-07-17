@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""__init__ magic method for models directory."""
+"""__init__ magic method for models directory"""
+from models.engine.file_storage import FileStorage
 
-from .engine import file_storage
-storage = file_storage.FileStorage()
+
+storage = FileStorage()
 storage.reload()
