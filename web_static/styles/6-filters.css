@@ -9,6 +9,7 @@ filters
   background-color: #FFF;
   border: 1px solid #DDD;
   border-radius: 4px;
+  position: relative;
   height: 70px;
   width: 100%;
   
@@ -31,8 +32,11 @@ filters
 }
 
 .filters > div {
-  float: left;
+  position: absolute;
   width: 25%;
+}
+.filters div.amenities {
+  left: 25%;
 }
 
 .headFilter {
@@ -57,6 +61,7 @@ ul.popover {
   display: none;
   margin-top: 0;
   width: 100%;
+  z-index: 9;
 }
 
 .locations .popover {
